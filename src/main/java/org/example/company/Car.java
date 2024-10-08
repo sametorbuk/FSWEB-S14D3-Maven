@@ -1,19 +1,16 @@
 package org.example.company;
 
-
-
 public class Car {
     private boolean engine;
     private int cylinders;
     private String name;
-    private  int wheels;
-
+    private int wheels;
 
     public Car(int cylinders, String name) {
         this.cylinders = cylinders;
         this.name = name;
         this.engine = true;
-        this.wheels=4;
+        this.wheels = 4;
     }
 
     public String getName() {
@@ -23,7 +20,6 @@ public class Car {
     public int getCylinders() {
         return cylinders;
     }
-
 
     @Override
     public String toString() {
@@ -35,25 +31,16 @@ public class Car {
                 '}';
     }
 
-   public String startEngine(){
-        getClass();
-      return "engine is starting";
-   }
+    public String startEngine() {
+        return "the Car's engine is starting";
+    }
+
+    public String accelerate() {
+        return "The Car is accelerating";
+    }
 
 
-
-    public String accelerate(){
-        getClass();
-
-     return "the car is accelerating";
-
-   }
-
-   public String brake(){
-        getClass();
-     return "the car is braking";
-   }
-
-
-
+    public String brake() {
+        return "the Car is braking";
+    }
 }

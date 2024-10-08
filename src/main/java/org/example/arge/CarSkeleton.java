@@ -4,7 +4,10 @@ public class CarSkeleton {
     private String name;
     private String description;
 
+
     public CarSkeleton() {
+        this.name = "Default Car";
+        this.description = "Default Description";
     }
 
 
@@ -14,20 +17,28 @@ public class CarSkeleton {
     }
 
 
-    public void startEngine(){
-
+    public void startEngine() {
+        System.out.println(name + " engine is starting...");
+        drive();
     }
 
-    protected void runEngine(){
 
+    protected void runEngine() {
+        System.out.println(name + " engine is running...");
     }
 
-    public void drive(){
 
+    public void drive() {
+        System.out.println(name + " is driving...");
         runEngine();
-
     }
 
 
+    public String getName() {
+        return name;
+    }
 
+    public String getDescription() {
+        return description;
+    }
 }

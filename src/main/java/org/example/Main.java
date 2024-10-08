@@ -18,34 +18,34 @@ public class Main {
 
         System.out.println(car.startEngine());
 
-        System.out.println(car.accelerate());
+       car.accelerate();
 
         System.out.println(car.brake());
 
         Car mitsubishi = new Mitsubishi(6, "Outlander VRX 4WD");
 
-        System.out.println(mitsubishi.startEngine());
+        mitsubishi.startEngine();
 
-        System.out.println(mitsubishi.accelerate());
+        mitsubishi.accelerate();
 
-        System.out.println(mitsubishi.brake());
+        mitsubishi.brake();
 
         Car ford = new Ford(6, "Ford Falcon");
 
-        System.out.println(ford.startEngine());
+        ford.startEngine();
 
-        System.out.println(ford.accelerate());
+      ford.accelerate();
 
-        System.out.println(ford.brake());
+       ford.brake();
 
         Car holden = new Holden(6, "Holden Commodore");
 
 
-        System.out.println(holden.startEngine());
+        holden.startEngine();
 
-        System.out.println(holden.accelerate());
+      holden.accelerate();
 
-        System.out.println(holden.brake());
+       holden.brake();
 
 
         Car mitsubishi1 = new Mitsubishi(123,"Evo");
@@ -53,9 +53,9 @@ public class Main {
         Car holden1 =  new Holden(123,"model-x");
 
 
-        CarSkeleton electricCar = new ElectricCar(23.5,7);
-        CarSkeleton gasPoweredCar=new GasPoweredCar(11.5,7);
-        CarSkeleton hybridCar = new HybridCar(7.3 , 7 , 9);
+
+        GasPoweredCar gasCar = new GasPoweredCar("Gas Powered Car", "A car powered by gasoline", 12.5, 4);
+        ElectricCar electricCar = new ElectricCar("Electric Car", "A car powered by electricity", 15.0, 75);
 
 
 
